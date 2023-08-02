@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="YOUR_API_KEY_HERE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AmboinaExploration"
+        tools:targetApi="31">
+        <activity
+            android:name=".DetailKesenianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KesenianActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailFestivalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailWisataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WisataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FestivalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailBudayaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BudayaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailKulinerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KulinerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SejarahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
