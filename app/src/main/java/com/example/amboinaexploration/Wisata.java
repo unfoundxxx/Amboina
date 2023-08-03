@@ -1,16 +1,21 @@
 package com.example.amboinaexploration;
 
+
 public class Wisata {
     private String name;
     private int image;
     private String description;
-    private String place;
+    private double latitude;
+    private double longitude;
+    private String mapUrl;
 
-    public Wisata(String name, int image, String description, String place) {
+    public Wisata(String name, int image, String description, double latitude, double longitude, String mapUrl) {
         this.name = name;
         this.image = image;
         this.description = description;
-        this.place = place;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.mapUrl = mapUrl;
     }
 
     public String getName() {
@@ -25,7 +30,15 @@ public class Wisata {
         return description;
     }
 
-    public String getPlace() {
-        return place;
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public String getMapUrl() {
+        return mapUrl;
     }
 }

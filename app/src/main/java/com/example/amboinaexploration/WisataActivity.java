@@ -38,7 +38,9 @@ public class WisataActivity extends AppCompatActivity {
                 intent.putExtra("nama_wisata", wisata.getName());
                 intent.putExtra("gambar_wisata", wisata.getImage());
                 intent.putExtra("deskripsi_wisata", wisata.getDescription());
-                intent.putExtra("tempat_wisata", wisata.getPlace());
+                intent.putExtra("latitude_wisata", wisata.getLatitude());
+                intent.putExtra("longitude_wisata", wisata.getLongitude());
+                intent.putExtra("maps_url", wisata.getMapUrl());
                 startActivity(intent);
             }
         });
@@ -56,6 +58,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Keindahan daratan yang terhampar di tengah laut dengan pasir putih dan air laut yang jernih akan memukau mata Anda. Pulau Pombo juga menjadi tempat hidupnya spesies burung pombo yang merupakan burung khas wilayah Maluku. Keberagaman hayati juga terlihat saat air surut, ketika daratan baru mulai terlihat dan terbentuk dari perairan dangkal. Di bawah laut Pulau Pombo, Anda dapat menjumpai banyak spesies ikan, kerang, dan rumput laut yang menakjubkan. "
                         + "Pulau Pombo menjadi destinasi ideal untuk berkemah, karena suasana alamnya yang cocok untuk mendirikan tenda. Pohon-pohon rindang di tengah pulau bisa digunakan untuk berteduh. Namun, Anda perlu memperhatikan cuaca saat mengunjungi pulau ini, karena ombak besar dapat menjadi kendala bagi kapal nelayan yang mengantar wisatawan ke Pulau Pombo. "
                         + "Sebagai pulau kecil yang tidak berpenghuni, Pulau Pombo tetap menjaga keadaan alamnya yang natural, termasuk bagian hutan yang masuk ke dalam hutan cagar alam. Tidak ada fasilitas di sana, bahkan papan penunjuk pun tidak ada. Jika ingin berkunjung, Anda disarankan untuk membawa persediaan makanan dan air, serta membawa kembali sampah dari makanan yang Anda bawa. Jangan lupa juga membawa persediaan obat-obatan darurat karena lokasinya yang terpencil dan jauh dari desa berpenghuni terdekat. Dengan segala keindahannya, Pulau Pombo menawarkan pengalaman liburan yang tak terlupakan bagi para pengunjungnya.",
+                -3.5390718,
+                128.3734286,
                 "https://www.google.com/maps/place/Pulau+Pombo/@-3.5390718,128.3734286,16.25z/data=!4m6!3m5!1s0x2d6c8d16e8744e19:0x33f724fa599db51a!8m2!3d-3.5318271!4d128.3755021!16s%2Fg%2F11tg88d2tq?entry=ttu"));
 
         data.put("Pantai Liang", new Wisata(
@@ -69,6 +73,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Pantai Liang juga merupakan tempat yang cocok untuk berburu foto. Terdapat dermaga kayu yang menjadi spot favorit untuk foto instagramable, karena latar belakang lautan lepas yang cantik. Aktivitas lain yang bisa dinikmati di pantai ini termasuk cliff jump, menaiki banana boat, dan sunbathing. "
                         + "Pantai Liang berjarak sekitar 40 kilometer dari pusat Kota Ambon dan bisa diakses menggunakan kendaraan pribadi atau transportasi umum seperti ojek atau angkutan umum. Tiket masuk ke pantai ini sangat terjangkau, sekitar Rp. 10.000 per orang. Fasilitas yang tersedia termasuk ruang berganti baju, ruang bilas, persewaan banana boat, dan warung makanan serta minuman ringan."
                         + "Pantai morela",
+                -3.5049263,
+                128.3428253,
                 "https://www.google.com/maps/place/Pantai+Liang/@-3.5049263,128.3428253,15z/data=!3m1!4b1!4m6!3m5!1s0x2d6c8b4d049b04b7:0x34b7df42fb67f814!8m2!3d-3.5049264!4d128.3428253!16s%2Fg%2F11hb2pqnn9?entry=ttu"
         ));
         data.put("Pantai Natsepa", new Wisata(
@@ -83,6 +89,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Pantai Natsepa terletak di Desa Suli, Kecamatan Salahutu, Kabupaten Maluku Tengah, Provinsi Maluku. Lokasinya hanya sekitar 18 km dari Ambon, dapat ditempuh dalam waktu sekitar 30 menit dengan kendaraan bermotor. Transportasi untuk menuju ke pantai ini sangat mudah, dengan pilihan rental kendaraan atau naik kendaraan umum (angkot).\n"
                         + "Pantai Natsepa buka selama 24 jam, tetapi kunjungan terakhir biasanya sampai pukul 21.00. Tiket masuk ke pantai ini terjangkau, hanya sekitar Rp 3.000 per orang, dan tarif parkir untuk sepeda motor mulai dari Rp 5.000, sedangkan untuk mobil sekitar Rp 10.000.\n"
                         + "Di sekitar Pantai Natsepa, tersedia penginapan atau hotel yang nyaman, beberapa di antaranya bahkan menghadap langsung ke pantai, sehingga Anda dapat menikmati matahari terbit dengan lebih nyaman.",
+                -3.6176061,
+                128.2878283,
                 "https://www.google.com/maps/place/Pantai+Natsepa/@-3.6176061,128.2878283,16z/data=!4m6!3m5!1s0x2d6cece6e8bfa427:0x4f23bfbc3a9673f2!8m2!3d-3.6215465!4d128.2921198!16s%2Fg%2F11cjj0hyrf?entry=ttu"
         ));
         data.put("Pantai Lubang Buaya Morela", new Wisata(
@@ -95,6 +103,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Sekalipun menawarkan keindahan yang luar biasa, Pantai Lubang Buaya tetap terjangkau bagi para pengunjung. Warga setempat bersama berbagai pihak telah berusaha mengembangkan Morella sebagai destinasi wisata yang ramah kantong. Tiket masuknya cukup terjangkau, hanya sekitar Rp2.000. Pengunjung juga dapat menggunakan jasa pemandu dengan memberikan kontribusi seikhlasnya. Disarankan untuk membawa peralatan snorkeling atau diving pribadi.\n"
                         + "Wisata di Morella tak hanya terbatas pada Pantai Lubang Buaya. Anda juga dapat mengunjungi Pantai Wai Moki, yang berjarak sekitar 3 km dari Pantai Lubang Buaya. Teluk Tilepuwai menawarkan pesona lain yang bisa dinikmati dengan berjalan kaki selama 13 menit. Selain itu, ada objek wisata lain seperti Tanjung Setan dan Benteng Kapahama yang memiliki nilai sejarah bagi masyarakat Morella.\n"
                         + "Jadi, siapkan rencana perjalanan Anda dan nikmati keindahan Morella, sebuah destinasi wisata memikat di Maluku Tengah.",
+                -3.5184811,
+                128.2237001,
                 "https://www.google.com/maps/place/Lubang+Buaya+Morela/@-3.5184811,128.2237001,20.13z/data=!4m14!1m7!3m6!1s0x2d6cf6ae7693ae9f:0x201c7423df81cfcc!2sLubang+Buaya+Morela!8m2!3d-3.5183437!4d128.2236557!16s%2Fg%2F11c45sxdpv?entry=ttu"
         ));
         data.put("Pantai Pintu Kota", new Wisata(
@@ -105,6 +115,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Rute menuju Pantai Pintu Kota Ambon adalah sekitar 26 km dari pusat kota Ambon atau sekitar 1 jam perjalanan menggunakan kendaraan roda empat. Jika menggunakan transportasi umum, dapat menggunakan angkutan umum berwarna merah menuju Desa Airlouw dengan tarif sekitar Rp 30.000 perjalanan sekali jalan, dilanjutkan dengan ojek pengkolan sekitar 2,5 km atau 7 menit. Pengunjung juga dapat menggunakan kendaraan pribadi karena jalan menuju lokasi sudah beraspal. Bagi pengunjung dari luar Ambon, bisa menyewa taksi dari Bandara Pattimura dengan estimasi dana sekitar Rp 200.000.\n"
                         + "Harga tiket masuk ke Pantai Pintu Kota Ambon terjangkau, hanya sekitar Rp 5.000 per orang, ditambah biaya parkir untuk kendaraan bermotor sekitar Rp 2.000 dan mobil sekitar Rp 5.000. Pantai ini menyediakan fasilitas yang cukup lengkap, termasuk area parkir yang luas dan nyaman, serta beberapa pondokan untuk bersantai dan menikmati pemandangan pantai. Ada juga pilihan penginapan dengan harga terjangkau untuk yang ingin menginap di sekitar pantai.\n"
                         + "Di Pantai Pintu Kota Ambon, pengunjung dapat menikmati keindahan panorama bibir pantai yang memiliki sedikit pasir dan didominasi oleh bebatuan tajam. Pantai ini juga memiliki panorama karang berlubang dengan dinding tebing berwarna coklat kemerahan yang dihantam gelombang ombak, menciptakan pecahan air yang indah. Bagi pecinta snorkeling dan diving, pantai ini menawarkan keindahan bawah laut dengan gugusan terumbu karang yang indah. Pengunjung juga dapat menyewa speedboat untuk menikmati keindahan pantai dari atas laut. Jangan lupa menikmati indahnya sunset dari berbagai sudut tempat yang nyaman di pantai ini.",
+                -3.7705365,
+                128.1524331,
                 "https://www.google.com/maps/place/Pantai+Pintu+Kota+Ambon/@-3.7705365,128.1524331,15z/data=!4m6!3m5!1s0x2d6cc335f61cc1e9:0x456317295a6201a6!8m2!3d-3.7705365!4d128.1524331!16s%2Fg%2F11b7vd74_p?entry=ttu"
         ));
         data.put("Pantai Batu Kapal", new Wisata(
@@ -121,6 +133,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Disarankan untuk datang pada pagi hari untuk menghindari keramaian. Jika datang di siang hari atau sore hari, pantai ini akan lebih ramai dengan pengunjung. Bagian dalam kapal bisa diakses saat air surut, karena pada saat air pasang bisa menjadi berbahaya karena kedalaman air bertambah.\n"
                         + "Pengunjung disarankan membawa makanan, handuk, dan alat snorkeling sendiri, karena tidak ada tempat penyewaan alat snorkeling atau kedai makanan di dekat pantai. Penjual makanan dan minuman biasanya baru berdagang di sore hari.\n"
                         + "Pada dekat lokasi wisata, pengunjung harus teliti untuk melihat papan penunjuk lokasi Batu Kapal yang berukuran tidak terlalu besar sebagai gerbang masuk ke Batu Kapal Liliboi.",
+                -3.7409857,
+                128.0290293,
                 "https://www.google.com/maps/place/Batu+Kapal+Lilibooi/@-3.7409857,128.0290293,16z/data=!4m6!3m5!1s0x2d6cde39a7154e9f:0x1d8350b249e4ad7d!8m2!3d-3.7430841!4d128.0322265!16s%2Fg%2F11c2qk9mmm?entry=ttu"
         ));
         data.put("Pantai Halasi", new Wisata(
@@ -134,8 +148,10 @@ public class WisataActivity extends AppCompatActivity {
                         + "Wattiheluw juga menyebutkan bahwa selain kamar nginap, Halassy yang dekat dengan tempat wisata Lubang Buaya juga memiliki resort dan fasilitas karaoke.\n"
                         + "Pengunjung yang datang ke Halassy Beach dikenakan tiket masuk dengan harga yang tergolong murah, hanya sebesar Rp. 5.000 saja. Lokasi ini telah menjadi populer dengan kunjungan sekitar 300 orang dalam sehari, dan pada hari Minggu bisa mencapai ribuan pengunjung.\n"
                         + "Pihak pengelola berencana untuk membangun kamar nginap apung yang berada di bawah tebing karang, dengan harapan menjadikan Halassy Beach sebagai tempat favorit yang wajib dikunjungi.",
-                "https://www.google.com/maps/place/Pantai+Halasi,+Jl.+Propinsi,+Morela,+Kec.+Leihitu,+Kabupaten+Maluku+Tengah,+Maluku/data=!4m2!3m1!1s0x2d6cf14728529623:0xd70fd2dd09d53f00?sa=X&ved=2ahUKEwjLke-rprSAAxVGbmwGHYNPDiYQ8gF6BAgPEAA&ved=2ahUKEwjLke-rprSAAxVGbmwGHYNPDiYQ8gF6BAgQEAI"
-        ));
+                -3.5390718,
+                128.3734286,
+                "https://www.google.com/maps/place/Pantai+Halasi/@-3.5344931,128.2136056,15z/data=!3m1!4b1!4m6!3m5!1s0x2d6cf14728529623:0xd70fd2dd09d53f00!8m2!3d-3.5344931!4d128.2136056!16s%2Fg%2F11f3cm8wwl?entry=ttu"
+                ));
         data.put("Pantai Hukurila", new Wisata(
                 "Pantai Hukurila",
                 R.drawable.pantai_hukurila,
@@ -145,6 +161,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Ada banyak kegiatan menarik yang dapat dilakukan di Pantai Hukurila, seperti menikmati keindahan landscape terumbu karang, melakukan aktivitas diving dan snorkeling untuk mengeksplorasi kehidupan bawah laut, menyewa speed boat untuk mengelilingi pulau dan menikmati pesona goa bawah laut. Bagi pecinta fotografi, momen indah di pantai ini dapat diabadikan dengan berbagai keindahan bawah laut dan panorama pantai yang menawan.\n"
                         + "Pantai Hukurila juga menawarkan kesempatan untuk menikmati keindahan matahari terbit di pantai yang menghadap ke arah Timur. Bagi pecinta kuliner, Anda dapat mencari makanan khas daerah sekitar pantai yang disajikan dengan bumbu lezat, seperti ikan asap, ikan bakar, dan papeda.\n"
                         + "Dengan berbagai aktivitas menarik dan keindahan alamnya, Pantai Hukurila menjadi destinasi wisata yang tepat untuk dikunjungi ketika berlibur ke Ambon, Maluku.",
+                -3.7381507,
+                128.240791,
                 "https://www.google.com/maps/place/Pantai+Hukurila/@-3.7381507,128.240791,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipNXR4VR0rYoAm9ySFMhWe-4YWcGKAHfvSM4yHYi!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNXR4VR0rYoAm9ySFMhWe-4YWcGKAHfvSM4yHYi%3Dw152-h86-k-no!7i4032!8i2268!4m7!3m6!1s0x2d6cc18e44ac7471:0x666d9152d3bbd2a7!8m2!3d-3.7381507!4d128.240791!10e5!16s%2Fg%2F11cm0lh9yr?entry=ttu"
         ));
         data.put("Talaga Tihu", new Wisata(
@@ -160,6 +178,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Tetapi setelah banjir melanda akibat hujan deras di pegunungan, warga menghentikan kegiatan berkebun di sana dan beralih berkebun di gunung yang juga merupakan lokasi banyak ternak.\n"
                         + "Wisata Talaga Cinta menjadi favorit bagi kalangan muda yang mencari suasana berpasangan yang romantis, sehingga tempat ini dinamakan Talaga Cinta. Meskipun masih minim fasilitas, tempat ini telah mendatangkan ribuan pengunjung setiap harinya.\n"
                         + "Saat ini, Talaga Cinta masih dikelola secara swadaya dan belum masuk dalam daftar potensi wisata Dinas Pariwisata Kabupaten Maluku Tengah.",
+                -3.6927869,
+                128.1824825,
                 "https://www.google.com/maps/place/Benteng+Nieuw+Victoria/@-3.6927869,128.1824825,15z/data=!4m6!3m5!1s0x2d6ce850f28ddc35:0xe2373ab58800130a!8m2!3d-3.6927869!4d128.1824825!16s%2Fg%2F1q5hbc1bs?entry=ttu"
         ));
         data.put("Siwang Paradise", new Wisata(
@@ -178,6 +198,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "5. Menikmati Hidangan Lezat: Setelah puas menjelajahi bukit, Anda dapat mencicipi hidangan lezat di warung-warung makan yang ada di sekitar lokasi.\n"
                         + "Fasilitas yang Tersedia:\n"
                         + "Fasilitas di Siwang Paradise masih terbatas, namun sudah cukup memadai. Anda dapat menemukan beberapa warung makan, toilet, dan spot foto menarik. Namun, tetap jaga kebersihan dan alam sekitar selama kunjungan Anda.",
+                -3.7356988,
+                128.1687674,
                 "https://www.google.com/maps/place/Siwang+Paradise/@-3.7356988,128.1687674,15z/data=!4m6!3m5!1s0x2d6cc3ea8e452e55:0x3c9aa7085f38397e!8m2!3d-3.7356988!4d128.1687674!16s%2Fg%2F11j2p1c6l_?entry=ttu"
         ));
 
@@ -196,6 +218,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Untuk menikmati keindahan alam di Bukit Seri, Anda hanya perlu membayar tiket masuk seharga Rp 5.000. Tempat ini buka 24 jam sehingga Anda dapat mengunjunginya kapan saja.\n"
                         + "Fasilitas:\n"
                         + "Bukit Seri telah mengalami beberapa pembaruan untuk meningkatkan kenyamanan pengunjung. Kondisi jalanan telah diaspal untuk keamanan dan kenyamanan saat berjalan atau berolahraga di sana. Terdapat juga beberapa gazebo untuk bersantai. Meskipun ada beberapa penjual makanan dan minuman di sekitar area, disarankan untuk membawa bekal sendiri karena fasilitas sanitasi belum tersedia.",
+                -3.7612643,
+                128.1474116,
                 "https://www.google.com/maps/place/Bukit+Paralayang/@-3.7612643,128.1474116,15z/data=!4m6!3m5!1s0x2d6cdd860e4b37d5:0xb9bd56775558cb07!8m2!3d-3.7612643!4d128.1474116!16s%2Fg%2F11hk6w7mkv?entry=ttu"
         ));
 
@@ -221,6 +245,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Fasilitas yang Tersedia:\n"
                         + "Benteng Amsterdam dilengkapi dengan fasilitas pendukung yang memadai, termasuk area parkir luas, warung makan, restoran, dan tempat penginapan dekat dengan lokasi wisata. Harga tiket yang terjangkau dan fasilitas yang lengkap akan membuat kunjungan Anda lebih nyaman dan tak terlupakan.\n"
                         + "Catatan: Selalu jaga kebersihan dan alam sekitar selama berkunjung ke Benteng Amsterdam. Pastikan untuk selalu mengikuti aturan dan petunjuk yang ada di lokasi. Sebelum melakukan perjalanan, pastikan untuk memeriksa informasi terkini dan jam operasional dengan menghubungi pihak berwenang setempat atau instansi pariwisata.",
+                -3.5828682,
+                128.0831395,
                 "https://www.google.com/maps/place/Cagar+Budaya+Benteng+Amsterdam/@-3.5828682,128.0831395,15z/data=!4m6!3m5!1s0x2d6cfad4c6874ac7:0xb2ee545928ea5c55!8m2!3d-3.5828682!4d128.0831395!16s%2Fm%2F0wyjt8d?entry=ttu"
         ));
 
@@ -247,6 +273,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Di sekitar Benteng Victoria terdapat beberapa penginapan yang dapat menjadi tempat istirahat yang nyaman. Stori Hotel Ambon dan Hotel Santika Premiere Ambon adalah pilihan terpercaya dan cukup dekat dengan benteng.\n"
                         + "Stori Hotel Ambon menyajikan fasilitas yang memadai dengan harga sekitar 200 ribu per malam, sementara Hotel Santika Premiere Ambon menawarkan pemandangan pantai yang indah dari jendela kamar dengan desain modern dan perpaduan warna yang menarik.\n"
                         + "Itulah informasi lengkap mengenai Benteng Victoria, destinasi wisata bersejarah yang tak boleh dilewatkan ketika berkunjung ke Kota Ambon. Dari sisi sejarah hingga kegiatan menarik yang bisa dilakukan, benteng ini menawarkan pengalaman wisata yang tak terlupakan di Maluku.",
+                -3.6927869,
+                128.1824825,
                 "https://www.google.com/maps/place/Benteng+Nieuw+Victoria/@-3.6927869,128.1824825,15z/data=!4m6!3m5!1s0x2d6ce850f28ddc35:0xe2373ab58800130a!8m2!3d-3.6927869!4d128.1824825!16s%2Fg%2F1q5hbc1bs?entry=ttu"
         ));
 
@@ -271,6 +299,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Fasilitas yang Tersedia:\n"
                         + "Air Panas Hatuasa Tulehu menyediakan fasilitas yang memadai bagi kenyamanan pengunjung, termasuk ruang ganti, kamar mandi, warung makan, dan mushola. Harga tiket yang terjangkau dan fasilitas yang lengkap membuat kunjungan Anda lebih menyenangkan.\n"
                         + "Catatan: Selalu jaga kebersihan dan lingkungan sekitar selama berkunjung ke Air Panas Hatuasa Tulehu. Pastikan untuk selalu mengikuti aturan dan petunjuk yang ada di lokasi. Sebelum melakukan perjalanan, pastikan untuk memeriksa informasi terkini dan jam operasional dengan menghubungi pihak berwenang setempat atau instansi pariwisata.",
+                -3.5930289,
+                128.3064649,
                 "https://www.google.com/maps/place/Air+Panas+Tulehu/@-3.5930289,128.3064649,17z/data=!3m1!4b1!4m6!3m5!1s0x2d6ced51d3a82f9d:0x5f4e01bca0cc1e18!8m2!3d-3.5930289!4d128.3086536!16s%2Fg%2F11cnbtyj6f?hl=id&entry=ttu"
         ));
 
@@ -283,6 +313,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Patung Pattimura menjadi simbol penting untuk mengenang perjuangan dan kepahlawanannya, terutama dalam pertempuran besar yang mempersatukan rakyat Maluku melawan penjajah Belanda untuk merebut Benteng Duurstede.\n"
                         + "Tak jauh dari Taman Pattimura, sekitar 50 meter dari Patung Pattimura, berdiri Gong Perdamaian. Gong Perdamaian ini merupakan bagian dari upaya pemulihan kehidupan di Ambon pasca tragedi kemanusiaan pada tahun 1999. Gong ini berdiameter sekitar 2 meter dan berisi gambar bendera dari berbagai negara di seluruh dunia, serta beberapa lambang agama besar. Monumen Gong Perdamaian Dunia ini juga dilengkapi dengan lambang Pancasila, menjadi gong perdamaian dunia ke-35 di dunia.\n"
                         + "Kedua destinasi wisata ini memberikan makna yang mendalam bagi warga Kota Ambon dan menjadi pusat kegiatan bagi masyarakat setempat. Taman Pattimura dan Gong Perdamaian merupakan bagian penting dalam melestarikan sejarah dan meningkatkan kesadaran akan perdamaian dan toleransi di daerah tersebut.",
+                -3.6905973,
+                128.1810274,
                 "https://www.google.com/maps/place/Taman+Pattimura/@-3.6905973,128.1810274,17z/data=!4m6!3m5!1s0x2d6ce8519e8f62bd:0xdd06871045372d08!8m2!3d-3.6930491!4d128.1836667!16s%2Fg%2F1pp2vm95d?entry=ttu"
         ));
 
@@ -294,6 +326,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Ternyata, wilayah makam tersebut sebelumnya merupakan penampungan tawanan perang Australia yang kemudian dibeli oleh pemerintah Australia untuk dijadikan tempat pemakaman bagi para serdadu ANZAC dari Batalyon 2/21 Australia \"Gull Force\". Keluarga para serdadu yang gugur sering mengunjungi kompleks pemakaman ini, terutama pada tanggal 25 April sebagai peringatan ANZAC day, hari di mana pasukan ANZAC pertama kali diterjunkan ke Gallipoli, Turki, pada Perang Dunia I.\n"
                         + "Pemerintah Indonesia bekerja sama dengan pemerintah Australia untuk mengelola dan merawat kompleks pemakaman ini dengan baik. Suasana di kompleks pemakaman terasa seperti berada di pemakaman luar negeri dengan rumput yang terawat, makam yang rapi, dan pepohonan yang meneduhkan. Monumen dengan nama-nama para serdadu yang gugur juga menghiasi dekat pintu gerbang.\n"
                         + "Tempat ini juga berdekatan dengan Makam Pahlawan Nasional Indonesia di kota Ambon. Semua biaya perawatan pemakaman ini ditanggung oleh Australia. Melalui kompleks pemakaman ini, para pengunjung dapat mengenang perjuangan dan menghargai jasa para tentara ANZAC yang gugur dalam mempertahankan kemerdekaan dan perdamaian.",
+                -3.6756274,
+                128.1904399,
                 "https://www.google.com/maps/place/Taman+Makam+Pahlawan+Nasional+Kapahaha/@-3.6756274,128.1904399,15z/data=!4m2!3m1!1s0x0:0x91659d8748a280cd?sa=X&ved=2ahUKEwj9k9Hlp7SAAxU1xzgGHQ-9BUMQ_BJ6BAhTEAA&ved=2ahUKEwj9k9Hlp7SAAxU1xzgGHQ-9BUMQ_BJ6BAhgEAg"
         ));
 
@@ -309,6 +343,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Monumen Christina Martha Tiahahu terletak di Karang Panjang, Kecamatan Teluk Ambon, Kota Ambon, Maluku. Lokasinya tidak jauh dari pusat kota Ambon, dan Anda dapat menggunakan Google Maps untuk memudahkan mencarinya.\n"
                         + "Harga tiket masuk ke monumen ini terjangkau, yaitu sekitar Rp 5.000 per orang. Monumen ini buka 24 jam sehingga dapat dikunjungi kapan saja. Di sekitar monumen juga tersedia fasilitas seperti kamar mandi umum, tempat makan, dan area parkir.\n"
                         + "Patung Christina Martha Tiahahu menjadi ikon penuh perjuangan wanita di tanah Maluku dan mengagumkan banyak orang, termasuk segenap bangsa Indonesia yang menghormatinya sebagai Pahlawan Nasional.",
+                -3.6875195,
+                128.1923212,
                 "https://www.google.com/maps/place/Patung+Christina+Martha+Tiahahu/@-3.6875195,128.1923212,15z/data=!4m6!3m5!1s0x2d6ce92a8fd6d89b:0x8966dc572c62f750!8m2!3d-3.6875195!4d128.1923212!16s%2Fg%2F11btykb0zv?entry=ttu"
         ));
 
@@ -321,6 +357,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Monumen Gong Perdamaian Dunia ini memiliki diameter sekitar 2 meter dan berisi gambar-gambar bendera negara dari seluruh dunia, serta lambang-lambang agama besar seperti Muslim, Kristen, Hindu, dan Budha. Monumen ini menjadi simbol perdamaian yang diresmikan oleh Presiden Indonesia ke-6, Bapak Susilo Bambang Yudhoyono, pada tanggal 25 November 2009.\n"
                         + "Gong Perdamaian Dunia berada di ketinggian, dan untuk mencapainya, pengunjung harus menaiki beberapa anak tangga. Di bagian atas penyangga gong, tampak jelas lambang Pancasila yang menjelaskan bahwa Pancasila adalah ideologi milik Bangsa Indonesia.\n"
                         + "Monumen ini menjadi refleksi bagi Bangsa Indonesia tentang pentingnya toleransi dalam bernegara dan mewujudkan perdamaian dunia. Lewat Monumen Gong Perdamaian Dunia ini, generasi Indonesia di masa depan diharapkan dapat menciptakan peradaban yang lebih baik dan penuh toleransi daripada generasi sebelumnya.",
+                -3.6930873,
+                128.1812567,
                 "https://www.google.com/maps/place/Monumen+Perdamaian+Dunia/@-3.6930873,128.1812567,15z/data=!4m6!3m5!1s0x2d6ce85058510ac7:0x82e5d75c684bc1d7!8m2!3d-3.6930873!4d128.1812567!16s%2Fg%2F1ptwl3c2q?entry=ttu"
         ));
 
@@ -333,6 +371,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Bukan hanya keindahan arsitektur dan nilai sejarahnya, tetapi juga cerita unik tentang Masjid Wapauwe yang pernah berpindah secara gaib. Menurut cerita, ketika penduduk dari kelima kampung yang tinggal di daerah lereng Gunung Wawane turun dan menjadi Negeri Kaitetu, bangunan masjid ini tiba-tiba berada di tengah-tengah kampung lengkap dengan segala isinya. Meskipun usianya sudah tua, mushaf dan manuskrip yang tersimpan di masjid ini tetap terawat dengan baik dan dapat dibaca dengan jelas.\n"
                         + "Bagi para pengunjung, Masjid Wapauwe bukan hanya tempat wisata religi yang bersejarah, tetapi juga menjadi kesempatan untuk bersosialisasi dengan masyarakat sekitar. Berbaur dengan penduduk Negeri Kaitetu, para wisatawan dapat mengenal lebih dekat budaya dan kehidupan masyarakat setempat.\n"
                         + "Jadi, bagi siapa pun yang mengunjungi Maluku, Masjid Wapauwe adalah destinasi yang wajib dikunjungi untuk mengalami pengalaman unik dan memahami lebih dalam sejarah Islam di wilayah tersebut. Dengan arsitektur yang sederhana, peninggalan sejarah berharga, dan cerita yang menarik, masjid ini memberikan pengalaman spiritual dan budaya yang tak terlupakan.",
+                -3.5851811,
+                128.0842147,
                 "https://www.google.com/maps/place/Mesjid+Tua+Wapauwe+Kaitetu/@-3.5851811,128.0842147,15z/data=!4m6!3m5!1s0x2d6cfb2235872847:0xdf25cebb8b53e844!8m2!3d-3.5851811!4d128.0842147!16s%2Fg%2F121bdcn2?entry=ttu"
         ));
 
@@ -352,6 +392,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Selain sebagai tempat ibadah, masjid ini juga menjadi pusat kegiatan keagamaan dan sosial masyarakat, seperti pemberdayaan infaq, shodaqoh, zakat, dan wakaf, penyelenggaraan kegiatan pendidikan, dakwah Islam, dan perayaan hari besar Islam.\n"
                         + "Fasilitas yang tersedia di kompleks masjid mencakup area parkir, tempat penitipan alas kaki, ruang belajar (madrasah/TPA), aula serbaguna, gudang, perlengkapan pengurusan jenazah, mobil ambulance, poliklinik, perpustakaan, kantor sekretariat, penyejuk udara/AC, multimedia, dan sound system.\n"
                         + "Wisata religi di Masjid Raya Al-Fatah Ambon akan memberikan pengalaman tak terlupakan bagi pengunjung, dan bagi umat Islam, masjid ini menjadi tempat yang penting untuk menjalankan syariat dan mendalami keberagaman kultur di daerah tersebut.",
+                -3.6965846,
+                128.1774513,
                 "https://www.google.com/maps/place/Masjid+Raya+Al-Fatah/@-3.6965846,128.1774513,15z/data=!4m2!3m1!1s0x0:0xb9617aaf30ddcd08?sa=X&ved=2ahUKEwibxayBqbSAAxW48TgGHQCEBwwQ_BJ6BAhOEAA&ved=2ahUKEwibxayBqbSAAxW48TgGHQCEBwwQ_BJ6BAhcEAg"
         ));
 
@@ -362,6 +404,8 @@ public class WisataActivity extends AppCompatActivity {
                         + "Sejarah Gereja Tua Hila mencatat bahwa gereja ini pernah mengalami kerusakan total akibat perang saudara di Provinsi Maluku pada tahun 1999. Namun, setelah kesepakatan bersama, gereja ini berhasil dibangun kembali dengan arsitektur dan bentuk yang sama seperti semula. Bangunannya sangat sederhana, terbuat dari dinding kayu, dan memiliki tiga jendela di setiap sisi dindingnya.\n"
                         + "Satu hal yang membuat penulis menyukai gereja tua ini adalah cerita dan makna di baliknya. Gereja ini berada di lingkungan yang mayoritas Muslim dan dekat dengan Benteng Amsterdam, yang juga memiliki nilai sejarah yang tinggi. Meskipun saat penulis berkunjung, gereja tersebut sudah tidak lagi digunakan sebagai tempat ibadah oleh warga Nasrani setempat, penulis tetap memanjatkan doa agar konflik di daerah ini dapat reda dan perdamaian terwujud.\n"
                         + "Gereja Tua Immanuel menjadi bukti hidup dari sejarah panjang Maluku dan juga menjadi warisan bersejarah bagi daerah tersebut. Meskipun sederhana, gereja ini memiliki daya tarik tersendiri dengan cerita dan kenangan yang melingkupinya. Bagi penulis, kunjungan ke gereja ini bukan sekadar melihat bangunan tua, tetapi juga menyentuh hati dan merenungkan arti perdamaian dan persaudaraan di tengah perbedaan yang ada.",
+                -3.583286,
+                128.0458446,
                 "https://www.google.com/maps/place/Gereja+Tua+Immanuel/@-3.583286,128.0458446,14z/data=!4m10!1m2!2m1!1sgereja+tua+imanuel+peta!3m6!1s0x2d6cfbd15fd55999:0x2b1cee1ce78e3f25!8m2!3d-3.583286!4d128.0839534!15sChdnZXJlamEgdHVhIGltYW51ZWwgcGV0YZIBEXByb3Rlc3RhbnRfY2h1cmNo4AEA!16s%2Fg%2F11g0ds9rtm?entry=ttu"
         ));
 

@@ -65,6 +65,14 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.cardViewKesenian).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, KesenianActivity.class);
+                startActivity(intent);
+            }
+        });
+
         findViewById(R.id.cardViewFestival).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
