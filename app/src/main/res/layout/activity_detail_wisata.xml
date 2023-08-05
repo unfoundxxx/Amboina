@@ -4,7 +4,7 @@
     android:background="#2B2828"
     android:padding="16dp">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -16,6 +16,14 @@
             android:layout_height="200dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/buttonViewOnMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="@string/view_on_map" />
 
         <TextView
             android:id="@+id/textViewNamaWisataDetail"
@@ -30,14 +38,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp" />
-
-        <Button
-            android:id="@+id/buttonViewOnMap"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:text="@string/view_on_map" />
 
     </LinearLayout>
 </ScrollView>
