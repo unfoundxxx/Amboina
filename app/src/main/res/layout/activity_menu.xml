@@ -8,308 +8,317 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF"
-        tools:context=".MenuActivity">
+        android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <!-- ImageView untuk menu drawer -->
-
-        <!-- Gambar atas -->
-
-        <!-- Judul -->
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="30dp"
-            android:layout_height="26dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="4dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/menu" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="367dp"
-            android:layout_height="188dp"
-            android:layout_marginTop="40dp"
-            android:scaleType="fitXY"
-            app:layout_constraintDimensionRatio="H,9:16"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.363"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/top4" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="104dp"
-            android:layout_marginTop="132dp"
-            android:text="Jelajahi keindahan Ambon"
-            android:textColor="#FFFAF0"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <!-- bagian 1 -->
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout3"
-            android:layout_width="223dp"
-            android:layout_height="128dp"
-            android:layout_marginStart="84dp"
-            android:layout_marginTop="40dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/imageView">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            tools:context=".MenuActivity">
 
-            <!-- CardView Sejarah -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewSejarah"
-                android:layout_width="98dp"
-                android:layout_height="94dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="4dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/cardViewKuliner"
+            <!-- ImageView untuk menu drawer -->
+
+            <!-- Gambar atas -->
+
+            <!-- Judul -->
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.416">
+                app:srcCompat="@drawable/menu" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="52dp"
-                        android:layout_height="42dp"
-                        android:src="@drawable/sejarah" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Sejarah"
-                        android:textColor="#000000"
-                        android:textSize="12sp" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- CardView Kuliner -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewKuliner"
-                android:layout_width="98dp"
-                android:layout_height="94dp"
-                android:layout_marginStart="4dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/cardViewSejarah"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.416">
-
-                <LinearLayout
-                    android:layout_width="91dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="52dp"
-                        android:layout_height="42dp"
-                        android:src="@drawable/kuliner" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Kuliner"
-                        android:textColor="#000000"
-                        android:textSize="12sp" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <!-- bagian 2 -->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout4"
-            android:layout_width="223dp"
-            android:layout_height="119dp"
-            android:layout_marginStart="84dp"
-            android:layout_marginTop="12dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
-
-            <!-- CardView Budaya -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewBudaya"
-                android:layout_width="98dp"
-                android:layout_height="94dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="4dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/cardViewKesenian"
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="367dp"
+                android:layout_height="188dp"
+                android:layout_marginTop="40dp"
+                android:scaleType="fitXY"
+                app:layout_constraintDimensionRatio="H,9:16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.363"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.416">
+                app:srcCompat="@drawable/top4" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="52dp"
-                        android:layout_height="42dp"
-                        android:src="@drawable/budaya" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Budaya"
-                        android:textColor="#000000"
-                        android:textSize="12sp" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <!-- CardView Kesenian -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewKesenian"
-                android:layout_width="98dp"
-                android:layout_height="94dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/cardViewBudaya"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.416">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <ImageView
-                        android:layout_width="52dp"
-                        android:layout_height="42dp"
-                        android:src="@drawable/kesenian" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Kesenian"
-                        android:textColor="#000000"
-                        android:textSize="12sp" />
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <!-- bagian 3 -->
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout5"
-            android:layout_width="214dp"
-            android:layout_height="113dp"
-            android:layout_marginStart="88dp"
-            android:layout_marginTop="12dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
-
-            <!-- CardView Festival -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewFestival"
-                android:layout_width="98dp"
-                android:layout_height="94dp"
-                android:layout_marginStart="8dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="132dp"
+                android:text="Jelajahi keindahan Ambon"
+                android:textColor="#FFFAF0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.416">
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+            <!-- bagian 1 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="223dp"
+                android:layout_height="128dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView">
 
-                    <ImageView
-                        android:layout_width="52dp"
-                        android:layout_height="42dp"
-                        android:src="@drawable/festival" />
+                <!-- CardView Sejarah -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewSejarah"
+                    android:layout_width="98dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="4dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cardViewKuliner"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.416">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Festival"
-                        android:textColor="#000000"
-                        android:textSize="12sp" />
-                </LinearLayout>
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="52dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/sejarah" />
 
-            <!-- CardView Wisata -->
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardViewWisata"
-                android:layout_width="98dp"
-                android:layout_height="94dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp"
-                app:cardBackgroundColor="#FFFFFF"
-                app:cardCornerRadius="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/cardViewFestival"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.416">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sejarah"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="16dp">
+                </androidx.cardview.widget.CardView>
 
-                    <ImageView
-                        android:layout_width="52dp"
-                        android:layout_height="42dp"
-                        android:src="@drawable/wisata" />
+                <!-- CardView Kuliner -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewKuliner"
+                    android:layout_width="98dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="4dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardViewSejarah"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.416">
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="91dp"
                         android:layout_height="wrap_content"
-                        android:text="Wisata"
-                        android:textColor="#000000"
-                        android:textSize="12sp" />
-                </LinearLayout>
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
-            </androidx.cardview.widget.CardView>
+                        <ImageView
+                            android:layout_width="52dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/kuliner" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kuliner"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- bagian 2 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="223dp"
+                android:layout_height="119dp"
+                android:layout_marginStart="84dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                <!-- CardView Budaya -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewBudaya"
+                    android:layout_width="98dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="4dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/cardViewKesenian"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.416">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="52dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/budaya" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Budaya"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- CardView Kesenian -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewKesenian"
+                    android:layout_width="98dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardViewBudaya"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.416">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="52dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/kesenian" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kesenian"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- bagian 3 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="214dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="88dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                <!-- CardView Festival -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewFestival"
+                    android:layout_width="98dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="8dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.416">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="52dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/festival" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Festival"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- CardView Wisata -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewWisata"
+                    android:layout_width="98dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardViewFestival"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.416">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:layout_width="52dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/wisata" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wisata"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+    </RelativeLayout>
+    </ScrollView>
     <!-- Layout untuk drawer -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMenu"
