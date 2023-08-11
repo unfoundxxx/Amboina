@@ -22,11 +22,7 @@
             android:background="#FFFFFF"
             tools:context=".MenuActivity">
 
-            <!-- ImageView untuk menu drawer -->
 
-            <!-- Gambar atas -->
-
-            <!-- Judul -->
 
             <ImageView
                 android:id="@+id/imageView2"
