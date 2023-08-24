@@ -227,7 +227,7 @@ public class WisataActivity extends AppCompatActivity {
                 "Benteng Amsterdam",
                 R.drawable.benteng_amsterdam,
                 "Benteng Amsterdam, Mengenal Situs Bersejarah Peninggalan Belanda di Ambon\n"
-                        + "Harga Tiket: Rp 20.000, Jam Operasional: 06.00-18.00 WIT, Alamat: Kaitetu, Kec. Leihitu, Kab. Maluku Tengah, Maluku; Map: Cek Lokasi\n"
+                        + "Harga Tiket: bisa diberikan seiklasnya, Jam Operasional: 06.00-18.00 WIT, Alamat: Kaitetu, Kec. Leihitu, Kab. Maluku Tengah, Maluku; Map: Cek Lokasi\n"
                         + "Kota Ambon, selain terkenal dengan pesona alamnya yang indah, juga menawarkan destinasi wisata sejarah yang menarik, seperti Benteng Amsterdam. Destinasi sejarah ini menjadi pilihan menarik bagi keluarga saat liburan tiba.\n"
                         + "Benteng Amsterdam awalnya dibangun sebagai loji perdagangan oleh bangsa Portugis di bawah pimpinan Francisco Serrao pada tahun 1512. Kemudian, setelah Belanda menguasai Ambon pada awal abad ke-17, loji ini diubah menjadi batu yang dikelilingi pagar kayu tinggi yang disebut blokhuis.\n"
                         + "Benteng Amsterdam telah menjadi populer di kalangan masyarakat, namun masih ada yang penasaran dengan daya tariknya. Jika Anda termasuk yang penasaran, berikut adalah ulasan mengenai daya tarik dari Benteng Amsterdam.\n"
@@ -282,7 +282,7 @@ public class WisataActivity extends AppCompatActivity {
                 "Air Panas Hatuasa Tulehu",
                 R.drawable.air_panas,
                 "Air Panas Hatuasa Tulehu, Menikmati Keeksotisan Pemandian Alami di Kota Ambon\n"
-                        + "Harga Tiket: Rp 5.000, Jam Operasional: 09.00–17.00 WIT, Alamat: Tulehu, Kec. Salahutu, Kab. Maluku Tengah, Maluku; Map: Cek Lokasi\n"
+                        + "Harga Tiket: Rp 5.000, Alamat: Tulehu, Kec. Salahutu, Kab. Maluku Tengah, Maluku; Map: Cek Lokasi\n"
                         + "Kota Ambon menawarkan berbagai pesona keindahan alamnya, salah satunya adalah Air Panas Hatuasa Tulehu, sebuah destinasi wisata alam yang menarik perhatian wisatawan. Meskipun masih dikelola secara sederhana, pemandian air panas ini telah menjadi favorit warga lokal dan wisatawan yang datang berkunjung.\n"
                         + "Banyak orang datang ke pemandian air panas ini untuk merasakan sensasi berendam di air panas, yang diklaim mampu menghilangkan kelelahan setelah beraktivitas. Air Panas Hatuasa Tulehu memiliki banyak daya tarik yang jarang diketahui banyak orang, terutama bagi mereka yang belum pernah mengunjungi tempat wisata ini.\n"
                         + "Daya Tarik Air Panas Hatuasa Tulehu:\n"
@@ -292,7 +292,7 @@ public class WisataActivity extends AppCompatActivity {
                         + "Alamat dan Rute Menuju Lokasi:\n"
                         + "Pemandian Air Panas Hatuasa Tulehu terletak di Desa Tulehu, Kecamatan Salahutu, Kabupaten Maluku Tengah, Provinsi Maluku. Meskipun jaraknya cukup jauh dari pusat Kota Ambon, sekitar satu hingga dua jam perjalanan, tetapi sensasi berendam di pemandian ini akan sebanding dengan perjalanan yang Anda tempuh.\n"
                         + "Harga Tiket Masuk dan Jam Operasional:\n"
-                        + "Harga tiket masuk ke Air Panas Hatuasa Tulehu sangat terjangkau, hanya sekitar Rp 5 ribu per orang ditambah biaya parkir kendaraan. Pemandian ini buka mulai pukul 09.00 pagi hingga pukul 17.00 WIT.\n"
+                        + "Harga tiket masuk ke Air Panas Hatuasa Tulehu sangat terjangkau, hanya sekitar Rp 5 ribu per orang ditambah biaya parkir kendaraan. Pemandian ini buka mulai dari pagi hingga tengah malam.\n"
                         + "Kegiatan Menarik di Air Panas Hatuasa Tulehu:\n"
                         + "1. Berendam di Kolam Air Panas: Salah satu aktivitas yang wajib dilakukan adalah berendam di kolam air panas ini. Suhu air yang panas dan kucuran panjang di kolam memberikan sensasi pijatan alami yang menyegarkan.\n"
                         + "2. Berfoto Selfie dengan Pemandangan Menarik: Nikmati momen liburan dengan berfoto selfie di area pemandian dengan latar belakang pemandangan alam yang menarik.\n"
@@ -402,8 +402,8 @@ public class WisataActivity extends AppCompatActivity {
                 R.drawable.gereja_tua_imanuel,
                 "Gereja Tua Immanuel yang juga dikenal sebagai Gereja Tua Hila Ambon, adalah gereja bersejarah yang memiliki banyak kenangan dan makna bagi penulis. Gereja ini dibangun pada tahun 1659 dan merupakan gereja tertua di Provinsi Maluku. Terletak di Desa Hila, Kecamatan Salahutu Leihitu, Kabupaten Maluku Tengah, gereja ini berjarak sekitar 42 km dari pusat kota Ambon.\n"
                         + "Sejarah Gereja Tua Hila mencatat bahwa gereja ini pernah mengalami kerusakan total akibat perang saudara di Provinsi Maluku pada tahun 1999. Namun, setelah kesepakatan bersama, gereja ini berhasil dibangun kembali dengan arsitektur dan bentuk yang sama seperti semula. Bangunannya sangat sederhana, terbuat dari dinding kayu, dan memiliki tiga jendela di setiap sisi dindingnya.\n"
-                        + "Satu hal yang membuat penulis menyukai gereja tua ini adalah cerita dan makna di baliknya. Gereja ini berada di lingkungan yang mayoritas Muslim dan dekat dengan Benteng Amsterdam, yang juga memiliki nilai sejarah yang tinggi. Meskipun saat penulis berkunjung, gereja tersebut sudah tidak lagi digunakan sebagai tempat ibadah oleh warga Nasrani setempat, penulis tetap memanjatkan doa agar konflik di daerah ini dapat reda dan perdamaian terwujud.\n"
-                        + "Gereja Tua Immanuel menjadi bukti hidup dari sejarah panjang Maluku dan juga menjadi warisan bersejarah bagi daerah tersebut. Meskipun sederhana, gereja ini memiliki daya tarik tersendiri dengan cerita dan kenangan yang melingkupinya. Bagi penulis, kunjungan ke gereja ini bukan sekadar melihat bangunan tua, tetapi juga menyentuh hati dan merenungkan arti perdamaian dan persaudaraan di tengah perbedaan yang ada.",
+                        + "Gereja tua ini juga mempunyai nilai sejarah, berupa cerita dan makna di baliknya. yaitu Gereja ini berada di lingkungan yang mayoritas Muslim dan dekat dengan Benteng Amsterdam,salah satu bukti toleransi masyarakat Maluku. Meskipun, gereja tersebut sudah tidak lagi digunakan sebagai tempat ibadah oleh warga Nasrani setempat.\n"
+                        + "Gereja Tua Immanuel menjadi bukti hidup dari sejarah panjang Maluku dan juga menjadi warisan bersejarah bagi daerah tersebut. Meskipun sederhana, gereja ini memiliki daya tarik tersendiri dengan cerita dan kenangan yang melingkupinya. Jika berkunjungan ke gereja ini, bukan sekadar melihat bangunan tua, tetapi juga dapat menyentuh hati dan merenungkan arti perdamaian dan persaudaraan di tengah perbedaan yang ada.",
                 -3.583286,
                 128.0458446,
                 "https://www.google.com/maps/place/Gereja+Tua+Immanuel/@-3.583286,128.0458446,14z/data=!4m10!1m2!2m1!1sgereja+tua+imanuel+peta!3m6!1s0x2d6cfbd15fd55999:0x2b1cee1ce78e3f25!8m2!3d-3.583286!4d128.0839534!15sChdnZXJlamEgdHVhIGltYW51ZWwgcGV0YZIBEXByb3Rlc3RhbnRfY2h1cmNo4AEA!16s%2Fg%2F11g0ds9rtm?entry=ttu"
